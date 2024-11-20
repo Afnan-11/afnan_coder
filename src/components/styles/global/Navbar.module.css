@@ -1,0 +1,86 @@
+.navbarContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 2%;
+}
+
+.navbarContainer .logo h1 {
+  color: white;
+}
+
+.logo img{
+  width: 23%;
+}
+
+.navbarPages {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.hireMe button {
+  padding: 0.6rem 1.2rem;
+  border-radius: 5px;
+  border: none;
+  background: linear-gradient(145deg, #1e2024, #23272b);
+  /* box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px; */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, background 0.3s ease;
+  color: #ff014f;
+  cursor: pointer;
+}
+.hireMe button:hover {
+  background: linear-gradient(145deg, #23272b, #1e2024);
+  transform: translateY(-3px);
+}
+.navbarContainer .navPages {
+  display: flex;
+  gap: 40px;
+}
+.navbarContainer .navPages a {
+  text-decoration: none;
+  color: rgb(214, 214, 214);
+  font-size: 13px;
+}
+.navbarContainer .navPages button {
+  padding: 0rem 1rem;
+}
+
+.menuIcon {
+  display: none;
+}
+
+.menuIcon i {
+  font-size: 28px;
+  color: #ff014f;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.menuIcon i:hover {
+  transform: scale(1.2);
+}
+
+@media only screen and (max-width: 1178px) {
+  .navbarPages {
+    display: none;
+  }
+
+  .menuIcon {
+    display: block;
+    margin-right: 20px;
+  }
+}
+
+@media only screen and (max-width:768px){
+  .menuIcon i {
+    font-size: 22px;
+    color: #ff014f;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .menuIcon i:hover {
+    transform: scale(1.2);
+  }
+}

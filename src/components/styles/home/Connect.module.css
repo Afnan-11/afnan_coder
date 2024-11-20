@@ -1,0 +1,177 @@
+
+.contactContainer {
+  max-width: 800px;
+  /* margin: 0 auto; */
+  margin: 4% 0;
+  padding: 40px;
+  background: linear-gradient(145deg, #1e2024, #23272b);
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  color: #c4cfde;
+}
+
+.contactContainer .heading {
+  /* text-align: center; */
+  margin-bottom: 20px;
+}
+
+.contactContainer .heading h2 {
+  font-size: 36px;
+  color: #FF014F;
+  margin: 0;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.inputgroup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.inputs {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.inputs label {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 8px;
+  color: #c4cfde;
+}
+
+.inputs input,
+.inputs textarea {
+  padding: 10px;
+  border: 1px solid #3c3f45;
+  border-radius: 6px;
+  background-color: #2c2f35;
+  color: #fff;
+  font-size: 16px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.inputs input:focus,
+.inputs textarea:focus {
+  border-color: #FF014F;
+}
+
+textarea {
+  min-height: 120px;
+  resize: none;
+}
+
+.submitbtn{
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.submitbtn button {
+  padding: 0.6rem 1.2rem;
+  border-radius: 5px;
+  border: none;
+  background: linear-gradient(145deg, #1e2024, #23272b);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, background 0.3s ease;
+  color: #ff014f;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.submitbtn button:hover {
+  background: linear-gradient(145deg, #23272b, #1e2024);
+  transform: translateY(-3px);
+}
+
+
+@media only screen and (max-width:1178px){
+  .contactContainer {
+    max-width: 800px;
+    /* margin: 0 auto; */
+    margin: 4% 5%;
+    padding: 40px;
+    background: linear-gradient(145deg, #1e2024, #23272b);
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    color: #c4cfde;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .contactContainer {
+    max-width: 600px; 
+    margin: 4% 2%; 
+    padding: 30px; 
+  }
+
+  .contactContainer .heading h2 {
+    font-size: 28px; 
+    /* text-align: center; */
+  }
+
+  .form {
+    gap: 15px; /* Reduce gaps between form elements */
+  }
+
+  .inputgroup {
+    /* flex-direction: column;  */
+    gap: 15px; /* Adjust gap for better spacing */
+  }
+
+  .inputs input,
+  .inputs textarea {
+    font-size: 14px; /* Adjust input font size */
+    padding: 8px; /* Reduce padding for smaller input fields */
+  }
+
+  .submitbtn button {
+    padding: 0.5rem 1rem; /* Adjust button size */
+    font-size: 14px; /* Reduce button text size */
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .contactContainer {
+    max-width: 100%;
+    margin: 4% 5%; /* Add more side margins */
+    padding: 20px; 
+  }
+
+  .contactContainer .heading h2 {
+    font-size: 24px; /* Further reduce heading font size */
+    text-align: center;
+  }
+
+  .form {
+    gap: 10px; /* Reduce form element spacing */
+  }
+
+  .inputgroup {
+    flex-direction: column; 
+    gap: 15px; /* Adjust gap for better spacing */
+  }
+
+  .inputs input{
+    width: 100%;
+  }
+
+  .inputs input,
+  .inputs textarea {
+    font-size: 12px; /* Further reduce input font size */
+    padding: 6px;   
+  }
+
+  .submitbtn button {
+    padding: 0.4rem 0.8rem; /* Compact button size */
+    font-size: 12px; /* Adjust button text size */
+  }
+}
+
+

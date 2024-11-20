@@ -1,0 +1,152 @@
+.portfolioContainer {
+  margin: 4% 0%;
+}
+
+.portfolioContainer .heading {
+  text-align: center;
+}
+
+.portfolioContainer .heading span {
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #FF014F;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+
+.portfolioContainer .heading h2 {
+  color: white;
+  font-size: 60px;
+  line-height: 1.5;
+  font-weight: 700;
+  margin: 0;
+}
+
+/* Card Styles */
+
+.portfolioSection {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(200px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+
+a{
+  text-decoration: none;
+}
+
+.portfolioSection .portfolioCard  {
+  border-radius: 15px;
+  background: linear-gradient(145deg, #1e2024, #23272b);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  cursor: pointer;
+  padding: 20px;
+  transition: all 0.3s ease;
+}
+
+.portfolioSection .portfolioCard:hover {
+  background: linear-gradient(165deg, #23272b, #1e2024);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  transform: scale(1.05);
+}
+
+/* Portfolio Image */
+.portfolioImage {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.portfolioImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.portfolioImage:hover img {
+  transform: scale(1.1);
+  filter: brightness(1.3);
+}
+
+/* Portfolio Card Content */
+.portfolioCard .body h4 {
+  color: #c4cfde;
+  font-size: 23px;
+  font-weight: 600;
+  line-height: 1.5;
+  margin-top: 15px;
+  transition: color 0.3s ease;
+  text-align: center;
+}
+
+.portfolioCard:hover .body  h4 {
+  color: #FF014F;
+}
+
+
+.lineColor {
+  border: none;
+  height: 1px;
+  background-color: #444;
+}
+
+/* Responsive Adjustments */
+
+@media only screen and (max-width: 1178px) {
+  .portfolioContainer {
+    margin: 4% 5%;
+  }
+
+  .portfolioSection {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .portfolioCard .body h4 {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .portfolioSection {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+  }
+
+  .portfolioCard .body h4 {
+    font-size: 18px;
+  }
+
+  .portfolioContainer .heading h2 {
+    font-size: 40px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .portfolioSection {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 15px;
+  }
+
+  .portfolioContainer .heading span {
+    font-size: 12px;
+  }
+
+  .portfolioContainer .heading h2 {
+    font-size: 32px;
+  }
+
+  .portfolioCard {
+    padding: 15px;
+  }
+
+  .portfolioImage img {
+    transition: transform 0.4s ease, filter 0.4s ease;
+  }
+
+  .portfolioCard .body h4 {
+    font-size: 16px;
+    line-height: 1.3;
+  }
+}
